@@ -1,0 +1,18 @@
+package morgan;
+
+public class PongThread extends Thread{
+	PingPong p;
+
+	public pongThread(PingPong t) {
+		p=t;
+	}
+	@Override
+	public void run() {
+		try {
+			p.ping();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

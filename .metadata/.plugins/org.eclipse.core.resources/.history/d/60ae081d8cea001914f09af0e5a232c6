@@ -1,0 +1,9 @@
+package factory;
+
+public class GenerateBill {
+
+	public static void main(String[] args) {
+		GetPlanFactory gp=new GetPlanFactory();
+	}
+
+}

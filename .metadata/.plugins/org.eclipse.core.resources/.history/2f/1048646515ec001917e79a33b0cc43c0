@@ -1,0 +1,18 @@
+package morgan;
+
+import java.util.concurrent.Executors;
+
+public class PingPongMain {
+
+	public static void main(String[] args) {
+		PingPong p=new PingPong();
+		pingThread p1=new pingThread(p);
+		PongThread p2=new PongThread(p);
+		p1.start();
+		p2.start();
+		
+		Executors s=(Executors) Executors.newFixedThreadPool(2);
+
+	}
+
+}

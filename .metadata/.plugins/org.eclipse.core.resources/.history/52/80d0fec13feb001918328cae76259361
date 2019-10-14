@@ -1,0 +1,12 @@
+package decorator;
+
+public class Mozzarella extends ToppingDecorator {
+
+	public Mozzarella(Pizza tempPizza) {
+		super(tempPizza);
+		System.out.println("Adding dough");
+		System.out.println("Adding Moz");
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,16 @@
+package factory;
+
+public class GetPlanFactory {
+
+	public Plan getPlan(String name)
+	{
+		if(name.equalsIgnoreCase("commercialPlan"))
+		{
+			return new CommercialPlan();
+		}
+		if(name.equalsIgnoreCase("DomesticPlan"))
+		{
+			return new DomesticPlan();
+		}
+	}
+}

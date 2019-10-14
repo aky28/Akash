@@ -1,0 +1,5 @@
+package carDecoratorPattern;
+
+public class SportsCar {
+
+}

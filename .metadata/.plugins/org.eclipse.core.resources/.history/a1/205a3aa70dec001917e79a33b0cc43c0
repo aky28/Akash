@@ -1,0 +1,9 @@
+package concept;
+
+public class SingletonMain {
+
+	public static void main(String[] args) {
+       Singleton s=new Singleton();
+	}
+
+}

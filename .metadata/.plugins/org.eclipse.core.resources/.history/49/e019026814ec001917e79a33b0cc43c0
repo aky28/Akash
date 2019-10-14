@@ -1,0 +1,15 @@
+package morgan;
+
+public class pingThread extends Thread{
+
+	PingPong p;
+
+	public pingThread(PingPong t) {
+		p=t;
+	}
+	@Override
+	public void run() {
+		
+	}
+	
+}

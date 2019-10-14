@@ -1,0 +1,33 @@
+package tree;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Stack;
+
+public class SpiralTree {
+    Node root;
+    Stack s2=new Stack();
+    Stack s1=new Stack();
+    int count=0;
+	public static void main(String[] args) {
+		SpiralTree s=new SpiralTree();
+		s.root=new Node(1);
+		s.root.left=new Node(2);
+		s.root.right=new Node(3);
+		s.root.left.left=new Node(7);
+		s.root.left.right=new Node(6);
+		s.root.right.left=new Node(5);
+		s.root.right.right=new Node(4);
+		
+		s.s1.push(s.root);
+		s.spiral(s.s1,s.s2);
+	}
+
+	public void spiral(Stack s1,Stack s2)
+	{
+		if(root==null)
+			return;
+		System.out.print(root.data+" ");
+		
+	}
+}

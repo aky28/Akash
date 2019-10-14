@@ -1,0 +1,10 @@
+package concepts;
+
+public class A {
+
+	static void public  main(String[] args) {
+		System.out.println("Akash Srivastava");
+
+	}
+
+}
